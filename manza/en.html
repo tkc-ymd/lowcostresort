@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOW COST RESORT MANZA BEACH | Japanese-Style Hotel 5 Mins Walk to Nabee Beach Onna</title>
+    <meta name="description" content="Just a 5-minute walk to the emerald green Nabee Beach in Onna, Okinawa! Low Cost Resort Manza Beach features cozy tatami rooms and rich free perks (free parking, lounge, shampoo bar, and free laundry).">
+    
+    <!-- OGP Meta Tags -->
+    <meta property="og:title" content="LOW COST RESORT MANZA BEACH | Tatami Resort in Onna">
+    <meta property="og:description" content="5 mins walk to Nabee Beach! Enjoy free parking, lounge, laundry, and rich complimentary benefits during your stay.">
+    <meta property="og:image" content="https://www.lowcostresort.jp/manza/images/slide01.jpg">
+    <meta property="og:url" content="https://www.lowcostresort.jp/manza/en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LOW COST RESORTS">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- Favicon Links -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Hotel JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "LOW COST RESORT MANZA BEACH",
+      "description": "A boutique hotel located in the center of Onna Village, Okinawa's premier beach resort area. Steps away from the emerald green Nabee Beach. All rooms feature comfortable tatami floors, and guest-only free perks (24h free lounge, shampoo bar, laundry with dryer, guest parking, beach floats, and rental bicycles) are available.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "398-3 Onna",
+        "addressLocality": "Onna Village, Kunigami District",
+        "addressRegion": "Okinawa",
+        "postalCode": "904-0411",
+        "addressCountry": "JP"
+      },
+      "url": "https://www.lowcostresort.jp/manza/en.html",
+      "image": "https://www.lowcostresort.jp/assets/images/10.jpg",
+      "checkinTime": "15:00:00",
+      "checkoutTime": "10:00:00",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "24h Free Lounge", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Shampoo Bar", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Laundry & Dryer", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Bicycle Rental", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Beach Goods Rental", "value": true }
+      ]
+    }
+    </script>
+    
+    <!-- FAQ JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the front desk hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The front desk is open from 15:00 to 22:00. For security, the main entrance is locked after 22:00. Please use the back entrance near the parking lot for night entry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there parking available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer free parking on site. One car per room is free. Please inform the front desk during check-in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a laundry room?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we have a guest-only free laundry room. Both washing machines and dryers are free of charge, and laundry detergent is provided. Hours are 8:00 to 21:00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can children share beds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Children sharing beds stay for free regardless of the number of children. Extra futons are not provided. If you need extra futons, they can be rented for 2,000 yen per set."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Custom Styles for Manza Beach Page -->
+    <style>
+        /* Section styling */
+        .manza-intro-section {
+            background-color: #E6F0F6; /* Soft sky blue */
+        }
+        
+        .services-section {
+            background-color: #F8FAFC; /* Warm light gray */
+        }
+        
+        /* Grids for services and facilities */
+        .section-subtitle-text {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            max-width: 850px;
+            text-align: justify;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        /* Service & Facility cards styling */
+        .premium-card {
+            background: #ffffff;
+            border: 1px solid rgba(2, 132, 199, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(2, 132, 199, 0.06);
+        }
+        
+        .premium-card-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .premium-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .premium-card:hover .premium-card-image img {
+            transform: scale(1.03);
+        }
+        
+        .premium-card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .premium-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        
+        .premium-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        /* FAQ styling */
+        .faq-section {
+            background-color: #F1F5F9; /* Slate gray-blue background */
+        }
+        
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        
+        .faq-item {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .faq-q {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            line-height: 1.5;
+        }
+        
+        .faq-q span.q-prefix {
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        
+        .faq-a {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            padding-left: 1.25rem;
+            text-align: justify;
+        }
+        
+        .faq-a ul {
+            margin-top: 0.5rem;
+            padding-left: 1.25rem;
+            list-style-type: disc;
+        }
+        
+        .faq-a li {
+            margin-bottom: 0.25rem;
+        }
+        
+        /* Access section styling */
+        .access-section {
+            background-color: #E2E8F0; /* Beachy blue-gray */
+        }
+        
+        .access-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 3rem;
+            align-items: stretch;
+        }
+        
+        .access-info-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+        }
+        
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .info-group-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .info-group-title svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary);
+        }
+        
+        .info-group-content {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        .access-map-column {
+            width: 100%;
+            min-height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(2, 132, 199, 0.1);
+        }
+        
+        .access-map-column iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .facilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .access-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+            .access-info-column {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Sticky Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="../en.html" class="logo"><img src="../assets/images/3.png" alt="Low Cost Resorts"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../en.html" class="nav-link">Brand</a></li>
+                    <li><a href="#hero" class="nav-link">LCR Manza Beach</a></li>
+                    <li><a href="../naha/en.html" class="nav-link">LCR Naha Airport</a></li>
+                    <li><a href="../owners/en.html" class="nav-link">Owners</a></li>
+                    <li><a href="index.html" class="nav-link lang-switch">JA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slideshow Section (Uses local Manza slide images) -->
+        <section class="hero-slider-section" id="hero">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="images/Manza-slide01.jpg" alt="Low Cost Resort Manza Beach - Beautiful Nabee Beach with white parasol" fetchpriority="high" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide02.jpg" alt="Low Cost Resort Manza Beach - Hotel exterior" loading="lazy" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide03.jpg" alt="Low Cost Resort Manza Beach - Wooden beach swing" loading="lazy" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide04.jpg" alt="Low Cost Resort Manza Beach - Japanese room with futons and swim rings" loading="lazy" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide05.jpg" alt="Low Cost Resort Manza Beach - Tropical sunset cocktail on the beach" loading="lazy" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide06.jpg" alt="Low Cost Resort Manza Beach - Bright and open tatami guest room" loading="lazy" decoding="async">
+                </div>
+                <div class="slide">
+                    <img src="images/Manza-slide07.jpg" alt="Low Cost Resort Manza Beach - Spacious Japanese-Western room with sofa" loading="lazy" decoding="async">
+                </div>
+            </div>
+            
+            <!-- Slideshow Arrows -->
+            <button class="slider-arrow prev" aria-label="Previous Slide">&lsaquo;</button>
+            <button class="slider-arrow next" aria-label="Next Slide">&rsaquo;</button>
+            
+            <!-- Slideshow Dots -->
+            <div class="slider-dots"></div>
+        </section>
+
+        <!-- Intro Section (Left: Exterior photo / Right: Description) -->
+        <section class="section manza-intro-section" id="intro">
+            <div class="container fade-in-up">
+                <div class="row-item">
+                    <div class="row-image-container">
+                        <img loading="lazy" decoding="async" src="../assets/images/10.jpg" alt="LOW COST RESORT MANZA BEACH Exterior">
+                    </div>
+                    <div class="row-content-container">
+                        <span class="row-subtitle">Steps away from the beautiful beach.</span>
+                        <h2 class="row-title">Low Cost Resort Manza Beach</h2>
+                        <p class="row-desc">
+                            A beach resort located in the heart of the Manza Resort Area in Onna Village, Okinawa. Just steps away from the emerald green Nabee Beach. Located right in the center of Okinawa's premier resort village, "Low Cost Resort Manza Beach" is the perfect base to explore the island and enjoy a relaxing resort stay at a reasonable price.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms Section (和室 / 和洋室) -->
+        <section class="section rooms-section" id="rooms">
+            <div class="container">
+                <div class="location-header fade-in-up">
+                    <h2 class="location-section-title">Rooms</h2>
+                </div>
+                
+                <div class="location-grid">
+                    <!-- Room 1 -->
+                    <article class="location-card fade-in-up">
+                        <div class="card-image-wrap">
+                            <img loading="lazy" decoding="async" src="images/washitsu.jpg" alt="Japanese-Style Room Interior">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Japanese-Style Room (Washitsu)</h3>
+                            <p class="card-desc">
+                                A relaxing room featuring the pleasant texture of tatami mats and a simple, warm Japanese atmosphere. Sleep comfortably on thick futons, making it a popular choice for families with small children or groups of friends. After playing at the beach or sightseeing, stretch your legs on the tatami mats and enjoy a relaxing "island time."<br>
+                                <strong style="display: block; margin-top: 0.75rem; color: var(--text-main);">Capacity: 3 Adults (Children sharing bed stay for free)</strong>
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Room 2 -->
+                    <article class="location-card fade-in-up">
+                        <div class="card-image-wrap">
+                            <img loading="lazy" decoding="async" src="images/wayo-shitsu.jpg" alt="Japanese-Western Room Interior">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Japanese-Western Room (Wayo-shitsu)</h3>
+                            <p class="card-desc">
+                                A comfortable room combining the cozy sleep of sofa beds with the relaxation of a tatami space. Enjoy sleeping on comfortable sofa beds while using the tatami area to drink tea, chat, or organize your luggage. A highly functional and comfortable room blending Japanese warmth with Western utility.<br>
+                                <strong style="display: block; margin-top: 0.75rem; color: var(--text-main);">Capacity: 5 Adults (Children sharing bed stay for free)</strong>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Services Section (フリーラウンジ / ビーチグッズ / シャンプーバー / レンタサイクル) -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="location-header fade-in-up">
+                    <h2 class="location-section-title">Premium Free Services</h2>
+                    <p class="section-subtitle-text">
+                        To support your freedom and exploration in Okinawa, Low Cost Resort Manza Beach offers a range of complimentary premium services to enrich your stay.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/freelounge.jpg" alt="Free Lounge">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Free Lounge</h3>
+                            <p class="premium-card-desc">
+                                <strong>24-Hour Free Drink Lounge</strong><br>
+                                Enjoy warm coffee, tea, and cold soft drinks anytime in our guest-only lounge. Feel free to take drinks back to your room, or bring in your own food to enjoy.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/beachgoods.jpg" alt="Beach Goods Rental">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Beach Goods Rental</h3>
+                            <p class="premium-card-desc">
+                                We offer free rentals of large floats and beach gear to use at Nabee Beach, just a 5-minute walk away. No need to pack bulky gear—travel light and enjoy the emerald green sea. Please ask our staff at the front desk.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/shampoobar.jpg" alt="Shampoo Bar">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Shampoo Bar</h3>
+                            <p class="premium-card-desc">
+                                Choose from a wide variety of popular shampoos and conditioners to suit your mood. A great chance to try out items you've been curious about. No need to return them—simply leave them in your room upon checkout.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/rentacycle.jpg" alt="Bicycle Rental">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Bicycle Rental</h3>
+                            <p class="premium-card-desc">
+                                Complimentary rental bicycles are available for exploring the area. Perfect for visiting local restaurants, convenience stores, or taking a scenic ride around the beautiful Manza area.<br>
+                                <small style="display: block; margin-top: 0.5rem; color: var(--text-muted);">*Please return bicycles by 22:00.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section (駐車場 / ランドリー / 足洗い場) -->
+        <section class="section facilities-section" id="facilities">
+            <div class="container">
+                <div class="location-header fade-in-up">
+                    <h2 class="location-section-title">Shared Facilities</h2>
+                </div>
+                
+                <div class="facilities-grid">
+                    <!-- Facility 1 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/parking.jpg" alt="Guest Parking">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Guest Parking</h3>
+                            <p class="premium-card-desc">
+                                We offer a spacious, free on-site parking lot. Guests can park one vehicle per room for free, making it ideal for road trips and rental car tours around Okinawa. Please let the front desk know upon check-in.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Facility 2 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/guestlaundry.jpg" alt="Laundry Room">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Laundry Room</h3>
+                            <p class="premium-card-desc">
+                                A guest-only free laundry room is available (8:00 - 21:00). Washing machines and dryers are free to use, and laundry detergent is provided. Wash and dry your swimsuits or towels easily, allowing you to travel with less luggage.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Facility 3 -->
+                    <div class="premium-card fade-in-up">
+                        <div class="premium-card-image">
+                            <img loading="lazy" decoding="async" src="images/footwash.jpg" alt="Foot Wash Station">
+                        </div>
+                        <div class="premium-card-body">
+                            <h3 class="premium-card-title">Foot Wash Station</h3>
+                            <p class="premium-card-desc">
+                                An outdoor foot wash station is provided. After playing at Nabee Beach, rinse off sand from your feet, sandals, or floats here so you can return to your room clean and sand-free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (よくある質問 - 12問) -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="location-header fade-in-up">
+                    <h2 class="location-section-title">FAQ</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- Q1 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>What are the front desk hours?</div>
+                        <div class="faq-a">
+                            The front desk is open from 15:00 to 22:00.<br>
+                            For security, the main entrance is locked after 22:00. Please use the back entrance near the parking lot for night entry.<br>
+                            In case of emergency, please call the emergency contact number posted at the front desk.
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Is there parking available?</div>
+                        <div class="faq-a">
+                            Yes, we offer free parking on site. Please inform the front desk during check-in.<br>
+                            One car per room is free. Additional cars will be charged 1,500 yen per night.
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Is there internet/Wi-Fi?</div>
+                        <div class="faq-a">
+                            Yes, free Wi-Fi is available throughout the hotel and in all guest rooms.
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Is there a smoking area?</div>
+                        <div class="faq-a">
+                            The hotel is entirely non-smoking. A smoking area is located near the main entrance outside.
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Is there a laundry room?</div>
+                        <div class="faq-a">
+                            Yes, we have a guest-only free laundry room. Dryers and laundry detergent are also provided.<br>
+                            Hours are 8:00 to 21:00.<br>
+                            Please rinse off sand from swimsuits before washing.
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>What amenities and room equipment are provided?</div>
+                        <div class="faq-a">
+                            We provide the following:
+                            <ul>
+                                <li><strong>Amenities:</strong> Shampoo, conditioner, body soap, bath amenities, bath towel, face towel, slippers.</li>
+                                <li><strong>Room Equipment:</strong> Hair dryer, electric kettle, refrigerator, flat-screen TV, air conditioner (heating/cooling), bathtub, shower, toilet, desk, linens.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q7 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Is there room cleaning during my stay?</div>
+                        <div class="faq-a">
+                            We do not clean rooms during your stay. Fresh towels and amenities are available for exchange at the front desk free of charge.
+                        </div>
+                    </div>
+
+                    <!-- Q8 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Can children share beds?</div>
+                        <div class="faq-a">
+                            Children sharing beds stay for free regardless of the number of children. Extra futons are not provided.<br>
+                            If you need extra futons, they can be rented for 2,000 yen per set.
+                        </div>
+                    </div>
+
+                    <!-- Q9 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Tell me about the drink lounge.</div>
+                        <div class="faq-a">
+                            We offer complimentary warm coffee, tea, and cold soft drinks in the lounge 24 hours a day for our guests. You can also take drinks to your room.
+                        </div>
+                    </div>
+
+                    <!-- Q10 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>What rental items are available?</div>
+                        <div class="faq-a">
+                            We offer free rental bicycles, beach floats/gear for Nabee Beach, and a custom shampoo bar.
+                        </div>
+                    </div>
+
+                    <!-- Q11 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>How do I get to the hotel from Naha Airport?</div>
+                        <div class="faq-a">
+                            The "Okinawa Airport Shuttle" (highway bus) is highly convenient.<br>
+                            It takes about 108 minutes to reach "Nabee Beach Mae" or "Manza Beach Mae" bus stops, which are located right near the hotel.
+                        </div>
+                    </div>
+
+                    <!-- Q12 -->
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-q"><span class="q-prefix">Q.</span>Are there any house rules?</div>
+                        <div class="faq-a">
+                            Please check the evacuation route when you enter your room.<br>
+                            Please keep TV volumes low after 21:00 so other guests can rest. Please also stay quiet in the lounge after 21:00.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Booking Section -->
+        <section class="section booking-section" id="booking" style="background-color: var(--bg-white); padding: 4rem 0;">
+            <div class="container fade-in-up">
+                <div class="booking-card" style="background-image: url('../assets/images/booking-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 12px; padding: 4rem 2rem; color: #ffffff; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 1rem; line-height: 1.5;">
+                        Stay Smart, Play Active.<br>
+                        Maximize your Okinawa time.
+                    </h2>
+                    <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.85); line-height: 1.8; margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center;">
+                        We support divers, cyclists, and long-term guests. We welcome you with comfortable private rooms and rich free services (laundry, dryer, bicycle rental, and drink lounge) while eliminating unnecessary costs.
+                    </p>
+                    <div style="margin-bottom: 1.5rem; font-size: 0.95rem; color: rgba(255, 255, 255, 0.95); font-weight: 700; letter-spacing: 0.05em;">
+                        Search Availability and Book at the Best Price
+                    </div>
+                    <div class="booking-buttons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="https://www.booking.com/hotel/jp/low-cost-resort-manza-beach-jiu-bei-hai-zhuang.ja.html" target="_blank" rel="noopener noreferrer" class="booking-btn">Booking.com</a>
+                        <a href="https://travel.rakuten.com/usa/en-us/hotel_info_item/cnt_japan/sub_okinawa/cty_onna_village/10123456886162/" target="_blank" rel="noopener noreferrer" class="booking-btn">Rakuten Travel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section (LOCATION & ACCESS) -->
+        <section class="section access-section" id="access">
+            <div class="container">
+                <div class="location-header fade-in-up">
+                    <h2 class="location-section-title">LOCATION & ACCESS</h2>
+                </div>
+                
+                <div class="access-grid">
+                    <!-- Left: Info Column -->
+                    <div class="access-info-column fade-in-up">
+                        <!-- Location Info -->
+                        <div class="info-group">
+                            <h3 class="info-group-title">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Address
+                            </h3>
+                            <div class="info-group-content">
+                                Address: 398-3 Onna, Onna Village, Kunigami District, Okinawa 904-0411<br>
+                                Area: Approx. 5 min. walk to Nabee Beach / Approx. 3 min. drive to Cape Manzamo
+                            </div>
+                        </div>
+                        
+                        <!-- Car Access -->
+                        <div class="info-group">
+                            <h3 class="info-group-title">
+                                <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.27-3.82c.14-.4.52-.68.96-.68h9.54c.42 0 .81.27.95.68L19 11H5z"/></svg>
+                                By Car / Rental Car
+                            </h3>
+                            <div class="info-group-content">
+                                From Naha Airport:<br>
+                                Approx. 50 minutes via Okinawa Expressway (exit at Yaka I.C.)<br>
+                                Approx. 70 minutes via Route 58 (general road)
+                            </div>
+                        </div>
+                        
+                        <!-- Bus Access -->
+                        <div class="info-group">
+                            <h3 class="info-group-title">
+                                <svg viewBox="0 0 24 24"><path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.7-1.5 1.5zM18 11H6V6h12v5z"/></svg>
+                                By Bus / Public Transport
+                            </h3>
+                            <div class="info-group-content">
+                                Okinawa Airport Shuttle (highway bus): Take from Naha Airport and get off at "Nabee Beach Mae" or "Manza Beach Mae" (approx. 108 min., walking distance).<br>
+                                Public Bus (Route 20 / 120): Get off at "Manza Beach Mae" bus stop (approx. 3 min. walk).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Google Map Embed -->
+                    <div class="access-map-column fade-in-up">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Low+Cost+Resort+Manza+Beach+沖縄県国頭郡恩納村恩納398-3&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#hero">LCR Manza Beach</a></li>
+            <li><a href="../naha/en.html">LCR Naha Airport</a></li>
+            <li><a href="../en.html">Brand</a></li>
+            <li><a href="../owners/en.html">Owners</a></li>
+            <li><a href="index.html" class="lang-switch">JA</a></li>
+        </ul>
+        <div class="footer-bottom-wrap">
+            <div class="footer-logo">
+                <div class="lcr-text">LCR</div>
+                <div class="lcr-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 LOW COST RESORTS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script src="../script.js"></script>
+</body>
+</html>
